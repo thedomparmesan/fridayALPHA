@@ -1,7 +1,7 @@
 from telegram.ext import *
 import Constants as keys
 import requests
-import nlpcloud
+
 import telegram
 
 
