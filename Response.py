@@ -28,7 +28,7 @@ def sample_responses(input_text):
             question = file.read()
 
         res = requests.post(
-            "https://api.ai21.com/studio/v1/j1-large/complete",
+            "https://api.ai21.com/studio/v1/j1-jumbo/complete",
             headers={"Authorization": "Bearer LvS1U98SI7T277JO35yX3XtoAWUogynd"},
             json={
                 "prompt": question,
@@ -85,7 +85,7 @@ def sample_responses1(input_text):
                 question = file.read().replace('\n', '')
 
             res = requests.post(
-                "https://api.ai21.com/studio/v1/j1-large/complete",
+                "https://api.ai21.com/studio/v1/j1-jumbo/complete",
                 headers={"Authorization": "Bearer LvS1U98SI7T277JO35yX3XtoAWUogynd"},
                 json={
                     "prompt": question,
